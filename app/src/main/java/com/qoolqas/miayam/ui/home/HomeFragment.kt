@@ -15,7 +15,7 @@ import java.util.*
 class HomeFragment : Fragment() {
     private lateinit var rekomendasiAdapter: RekomendasiAdapter
     private var list = mutableListOf<Data>()
-    private var linearLayoutManager: LinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+    private var linearLayoutManager: LinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
     private var nameData: Array<String> = emptyArray()
     private var hargaData: Array<String> = emptyArray()
     private var deslripsiData: Array<String> = emptyArray()
@@ -53,32 +53,30 @@ class HomeFragment : Fragment() {
         rvHorizontal.setHasFixedSize(true)
         rvHorizontal.layoutManager = linearLayoutManager
     }
+//
+//    private fun prepare() {
+//        nameData = resources.getStringArray(R.array.name_array)
+//        hargaData = resources.getStringArray(R.array.harga_array)
+//        deslripsiData = resources.getStringArray(R.array.deskripsi_array)
+//        imageData = resources.obtainTypedArray(R.array.image_array)
+//    }
+//
+//    private fun addItem() {
+//        val list: ArrayList<Data> = ArrayList()
+//        for (i in nameData.indices) {
+//            val items = Data()
+//            items.image(imageData!!.getResourceId(i, -1))
+//            items.name(nameData[i])
+//            items.harga(hargaData[i])
+//            items.deskripsi(deslripsiData[i])
+//
+//            list.add(items)
+//        }
+//        rekomendasiAdapter = RekomendasiAdapter(list)
+////        rekomendasiAdapter.setOnItemClickListener(this@ListActivity)
+//        rvHorizontal.adapter = rekomendasiAdapter
+//    }
 
-    private fun prepare() {
-        nameData = resources.getStringArray(R.array.name_array)
-        hargaData = resources.getStringArray(R.array.harga_array)
-        deslripsiData = resources.getStringArray(R.array.deskripsi_array)
-        imageData = resources.obtainTypedArray(R.array.image_array)
-    }
-
-    private fun addItem() {
-        val list: ArrayList<Data> = ArrayList()
-        for (i in nameData.indices) {
-            val items = Data()
-            items.image(imageData!!.getResourceId(i, -1))
-            items.name(nameData[i])
-            items.harga(hargaData[i])
-            items.deskripsi(deslripsiData[i])
-
-            list.add(items)
-        }
-        rekomendasiAdapter = RekomendasiAdapter(list)
-//        rekomendasiAdapter.setOnItemClickListener(this@ListActivity)
-        rvHorizontal.adapter = rekomendasiAdapter
-    }
-    companion object {
-        fun newInstance(): HomeFragment = HomeFragment()
-    }
 }
 
 
