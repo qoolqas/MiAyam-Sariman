@@ -3,4 +3,25 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="image">image</string>
+    <array name="image_array">
+        <item>@drawable/mie1</item>
+        <item>@drawable/mie2</item>
+        <item>@drawable/mie3</item>
+    </array>
+    <string-array name="name_array">
+        <item>Mie Ayam Biasa</item>
+        <item>Mie Ayam Bakso</item>
+        <item>Mie Ayam Ceker</item>
+    </string-array>
+    <string-array name="harga_array">
+        <item>10000</item>
+        <item>15000</item>
+        <item>12000</item>
+    </string-array>
+    <string-array name="deskripsi_array">
+        <item>Mie Ayam Biasa dengan isi mie dengan ayam dan opsional dengan kuah atau tidak</item>
+        <item>Mie Ayam Bakso dengan isi mie dengan ayam dan ada tambahan bakso</item>
+        <item>Mie Ayam Ceker dengan isi mie dengan ayam dan ada tambahan ceker</item>
+    </string-array>
 </resources>
