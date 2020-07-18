@@ -14,8 +14,6 @@ class RekomendasiAdapter (private val list: List<Data>) :
     RecyclerView.Adapter<RekomendasiAdapter.ViewHolder>() {
     private val limit : Int = 5
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)
-    private var mTitleView: TextView? = null
-    private var mYearView: TextView? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.item_card_horizontal, parent, false)
@@ -39,9 +37,5 @@ class RekomendasiAdapter (private val list: List<Data>) :
             .placeholder(R.color.gray)
             .into(holder.view.horImage)
 
-    }
-    fun bind(data: Data) {
-        mTitleView?.text = data.name
-        mYearView?.text = data.harga
     }
 }
