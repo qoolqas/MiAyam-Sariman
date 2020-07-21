@@ -34,7 +34,6 @@ class HomeFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         rvPager.apply {
@@ -45,8 +44,6 @@ class HomeFragment : Fragment() {
             adapter = DecorationAdapter(mNicolasCageMovies)
         }
 
-
-
         rvHorizontal.apply {
             // set a LinearLayoutManager to handle Android
             // RecyclerView behavior
@@ -55,10 +52,7 @@ class HomeFragment : Fragment() {
             // set the custom adapter to the RecyclerView
             adapter = RekomendasiAdapter(mNicolasCageMovies)
         }
-
     }
-
-
 }
 
 
