@@ -12,7 +12,6 @@ import com.qoolqas.miayam.R
 import com.qoolqas.miayam.model.Data
 import kotlinx.android.synthetic.main.fragment_home.*
 
-
 class HomeFragment : Fragment() {
     private var linearLayoutManager: LinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
     private var linearLayoutManager2: LinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
@@ -45,14 +44,8 @@ class HomeFragment : Fragment() {
         }
 
         rvHorizontal.apply {
-            // set a LinearLayoutManager to handle Android
-            // RecyclerView behavior
-
             rvHorizontal.layoutManager =linearLayoutManager
-            // set the custom adapter to the RecyclerView
             adapter = RekomendasiAdapter(mNicolasCageMovies)
         }
     }
 }
-
-

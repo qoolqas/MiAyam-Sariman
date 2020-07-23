@@ -17,7 +17,6 @@ class RekomendasiAdapter (private val list: List<Data>) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.item_card_horizontal, parent, false)
-
         )
     }
 
