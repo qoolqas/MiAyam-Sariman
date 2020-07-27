@@ -10,6 +10,7 @@ import com.qoolqas.miayam.R
 import com.qoolqas.miayam.model.Data
 import kotlinx.android.synthetic.main.item_card_horizontal.view.*
 import kotlinx.android.synthetic.main.item_card_pager.view.*
+import kotlinx.android.synthetic.main.item_list_default.view.*
 
 class DecorationAdapter (private val list: List<Data>) :
     RecyclerView.Adapter<DecorationAdapter.ViewHolder>() {
@@ -17,7 +18,7 @@ class DecorationAdapter (private val list: List<Data>) :
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.item_card_pager, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_list_default, parent, false)
         )
     }
 
@@ -35,7 +36,7 @@ class DecorationAdapter (private val list: List<Data>) :
         Glide.with(holder.view)
             .load(list[position].image)
             .placeholder(R.color.gray)
-            .into(holder.view.pagerImage)
+            .into(holder.view.testImage)
 
     }
 }
