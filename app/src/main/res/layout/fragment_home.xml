@@ -94,7 +94,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView1"
             tools:ignore="RtlSymmetry"
-            tools:listitem="@layout/item_card_horizontal">
+            tools:listitem="@layout/item_list_vertical">
 
         </androidx.recyclerview.widget.RecyclerView>
 

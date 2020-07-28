@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/listNama"
+        android:id="@+id/verNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -40,7 +40,7 @@
         tools:text="Mie Ayam Bakso" />
 
     <TextView
-        android:id="@+id/listHarga"
+        android:id="@+id/verHarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -51,7 +51,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/verImage"
         app:layout_constraintStart_toEndOf="@+id/verImage"
-        app:layout_constraintTop_toBottomOf="@+id/listNama"
+        app:layout_constraintTop_toBottomOf="@+id/verNama"
         tools:text="Rp 15.000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
