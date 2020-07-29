@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 class HomeFragment : Fragment() {
     private var linearLayoutManager: LinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
     private var linearLayoutManager2: LinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+    private var linearLayoutManagerVer: LinearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
     private val mNicolasCageMovies = listOf(
         Data(R.drawable.mie1, "Mie Ayam","10000","Mie Ayam"),
         Data(R.drawable.mie2, "Mie Ayam","10000","Mie Ayam"),
@@ -46,6 +47,10 @@ class HomeFragment : Fragment() {
         rvHorizontal.apply {
             rvHorizontal.layoutManager =linearLayoutManager
             adapter = RekomendasiAdapter(mNicolasCageMovies)
+        }
+        rvVertical.apply {
+            rvVertical.layoutManager =linearLayoutManagerVer
+            adapter = MakananAdapter(mNicolasCageMovies)
         }
     }
 }
