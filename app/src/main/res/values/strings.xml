@@ -4,6 +4,9 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="image">image</string>
+    <string name="minuman">Minuman</string>
+    <string name="tentang">Tentang</string>
+    <string name="makanan">Makanan</string>
     <array name="image_array">
         <item>@drawable/mie1</item>
         <item>@drawable/mie2</item>
