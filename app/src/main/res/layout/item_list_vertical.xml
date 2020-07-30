@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
     android:orientation="vertical"
     android:padding="8dp">
 
     <ImageView
         android:id="@+id/verImage"
         android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_height="75dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/mie1"
         android:scaleType="centerCrop"
@@ -23,14 +25,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/listNama"
+        android:id="@+id/verNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
-        android:fontFamily="@font/roboto_regular"
-        android:textColor="@color/black"
+        android:fontFamily="@font/simply_rounded_bold"
+        android:textColor="@color/gray2"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/verImage"
@@ -40,18 +42,18 @@
         tools:text="Mie Ayam Bakso" />
 
     <TextView
-        android:id="@+id/listHarga"
+        android:id="@+id/verHarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="4dp"
-        android:fontFamily="@font/roboto_regular"
-        android:textColor="@color/black"
+        android:fontFamily="@font/simply_rounded"
+        android:textColor="@color/gray2"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/verImage"
         app:layout_constraintStart_toEndOf="@+id/verImage"
-        app:layout_constraintTop_toBottomOf="@+id/listNama"
+        app:layout_constraintTop_toBottomOf="@+id/verNama"
         tools:text="Rp 15.000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
