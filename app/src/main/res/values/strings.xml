@@ -7,6 +7,7 @@
     <string name="minuman">Minuman</string>
     <string name="tentang">Tentang</string>
     <string name="makanan">Makanan</string>
+    <string name="dum">Menjual berbagai macam roti seperti bolu, kukis, Croissant dll. tempat ini memiliki pantry sehingga bisa dimakan ditempat dan semacam cafe. Tempat ini menyediakan delivery order untuk jarak maksimal 1 km. dan kami bermitra dengan GOJEK</string>
     <array name="image_array">
         <item>@drawable/mie1</item>
         <item>@drawable/mie2</item>
