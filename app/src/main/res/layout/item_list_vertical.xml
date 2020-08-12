@@ -5,24 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="4dp"
-    android:layout_marginEnd="4dp"
     android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
     android:layout_marginBottom="4dp"
     android:orientation="vertical"
     android:padding="8dp">
 
-    <ImageView
-        android:id="@+id/verImage"
-        android:layout_width="80dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/mie1"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/image"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/verImage"
+                android:layout_width="80dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mie1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/verNama"
@@ -35,9 +52,9 @@
         android:textColor="@color/gray2"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/verImage"
-        app:layout_constraintStart_toEndOf="@+id/verImage"
-        app:layout_constraintTop_toTopOf="@+id/verImage"
+        app:layout_constraintBottom_toBottomOf="@+id/cardImage"
+        app:layout_constraintStart_toEndOf="@+id/cardImage"
+        app:layout_constraintTop_toTopOf="@+id/cardImage"
         app:layout_constraintVertical_bias="0.0"
         tools:text="Mie Ayam Bakso" />
 
@@ -51,8 +68,8 @@
         android:fontFamily="@font/simply_rounded"
         android:textColor="@color/gray2"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/verImage"
-        app:layout_constraintStart_toEndOf="@+id/verImage"
+        app:layout_constraintBottom_toBottomOf="@+id/cardImage"
+        app:layout_constraintStart_toEndOf="@+id/cardImage"
         app:layout_constraintTop_toBottomOf="@+id/verNama"
         tools:text="Rp 15.000" />
 
