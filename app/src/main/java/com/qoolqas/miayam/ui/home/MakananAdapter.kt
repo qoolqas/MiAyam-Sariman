@@ -1,5 +1,6 @@
 package com.qoolqas.miayam.ui.home
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +12,7 @@ import com.qoolqas.miayam.model.Data
 import kotlinx.android.synthetic.main.item_card_horizontal.view.*
 import kotlinx.android.synthetic.main.item_list_vertical.view.*
 
-class MakananAdapter (private val list: List<Data>) :
+class MakananAdapter (private val list: List<Data>, private val context : Context) :
     RecyclerView.Adapter<MakananAdapter.ViewHolder>() {
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
