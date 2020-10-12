@@ -1,5 +1,6 @@
 package com.qoolqas.miayam.ui.dashboard
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,7 @@ import com.qoolqas.miayam.R
 import com.qoolqas.miayam.model.Data
 import kotlinx.android.synthetic.main.item_card_horizontal.view.*
 
-class MinumanAdapter (private val list: List<Data>) :
+class MinumanAdapter (private val list: List<Data>, private val context : Context) :
     RecyclerView.Adapter<MinumanAdapter.ViewHolder>() {
     private val limit : Int = 5
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)

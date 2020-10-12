@@ -1,5 +1,6 @@
 package com.qoolqas.miayam.ui.home
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +10,7 @@ import com.qoolqas.miayam.R
 import com.qoolqas.miayam.model.Data
 import kotlinx.android.synthetic.main.item_pager_main.view.*
 
-class DecorationAdapter (private val list: List<Data>) :
+class DecorationAdapter (private val list: List<Data>, private val context : Context) :
     RecyclerView.Adapter<DecorationAdapter.ViewHolder>() {
     private val limit : Int = 3
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)
