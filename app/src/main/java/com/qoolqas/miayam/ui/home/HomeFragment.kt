@@ -41,16 +41,16 @@ class HomeFragment : Fragment() {
             snapHelper.attachToRecyclerView(rvPager)
             rvPager.addItemDecoration(LinePagerIndicatorDecoration())
             rvPager.layoutManager = linearLayoutManager2
-            adapter = DecorationAdapter(mNicolasCageMovies)
+            adapter = DecorationAdapter(mNicolasCageMovies, requireActivity().applicationContext)
         }
 
         rvHorizontal.apply {
             rvHorizontal.layoutManager =linearLayoutManager
-            adapter = RekomendasiAdapter(mNicolasCageMovies)
+            adapter = RekomendasiAdapter(mNicolasCageMovies, requireActivity().applicationContext)
         }
         rvVertical.apply {
             rvVertical.layoutManager =linearLayoutManagerVer
-            adapter = MakananAdapter(mNicolasCageMovies)
+            adapter = MakananAdapter(mNicolasCageMovies, requireActivity().applicationContext)
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.qoolqas.miayam
 
+import android.annotation.SuppressLint
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.Rect
@@ -13,7 +14,7 @@ import kotlin.math.max
 
 
 class LinePagerIndicatorDecoration : ItemDecoration() {
-    //    private val colorActive = -0x1
+//    private val colorActive = -0x1
 //    private val colorInactive = 0x66FFFFFF
     private val colorActive = R.color.colorPrimaryDark
     private val colorInactive = R.color.colorPrimary
@@ -79,6 +80,7 @@ class LinePagerIndicatorDecoration : ItemDecoration() {
         drawHighlights(c, indicatorStartX, indicatorPosY, activePosition, progress, itemCount)
     }
 
+    @SuppressLint("ResourceAsColor")
     private fun drawInactiveIndicators(
         c: Canvas,
         indicatorStartX: Float,
@@ -97,6 +99,7 @@ class LinePagerIndicatorDecoration : ItemDecoration() {
         }
     }
 
+    @SuppressLint("ResourceAsColor")
     private fun drawHighlights(
         c: Canvas, indicatorStartX: Float, indicatorPosY: Float,
         highlightPosition: Int, progress: Float, itemCount: Int

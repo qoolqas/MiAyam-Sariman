@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.qoolqas.miayam.R
 import com.qoolqas.miayam.model.Data
+import com.qoolqas.miayam.ui.detail.DetailActivity
 import kotlinx.android.synthetic.main.item_card_horizontal.view.*
 
 class RekomendasiAdapter(private val list: List<Data>, private val context : Context) :
@@ -41,7 +42,8 @@ class RekomendasiAdapter(private val list: List<Data>, private val context : Con
             .into(holder.view.horImage)
 
         holder.view.setOnClickListener {
-            //val intent = Intent(, DetailLaptop::class.java)
+            val intent = Intent(context, DetailActivity::class.java)
+            context.startActivity(intent)
 
         }
 
