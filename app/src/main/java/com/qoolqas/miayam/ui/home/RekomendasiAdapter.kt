@@ -42,8 +42,8 @@ class RekomendasiAdapter(private val list: List<Data>, private val context : Con
             .into(holder.view.horImage)
 
         holder.view.setOnClickListener {
-            val intent = Intent(context, DetailActivity::class.java)
-            context.startActivity(intent)
+            val intent = Intent(holder.view.context, DetailActivity::class.java)
+            holder.view.context.startActivity(intent)
 
         }
 
