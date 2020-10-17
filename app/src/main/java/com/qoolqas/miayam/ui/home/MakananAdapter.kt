@@ -1,15 +1,15 @@
 package com.qoolqas.miayam.ui.home
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.qoolqas.miayam.R
 import com.qoolqas.miayam.model.Data
-import kotlinx.android.synthetic.main.item_card_horizontal.view.*
+import com.qoolqas.miayam.ui.detail.DetailActivity
 import kotlinx.android.synthetic.main.item_list_vertical.view.*
 
 class MakananAdapter (private val list: List<Data>, private val context : Context) :
@@ -31,5 +31,11 @@ class MakananAdapter (private val list: List<Data>, private val context : Contex
             .placeholder(R.color.gray)
             .into(holder.view.verImage)
 
+        holder.view.setOnClickListener {
+            val intent = Intent(holder.view.context, DetailActivity::class.java)
+            intent.putExtra("data",list[position])
+            intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            holder.view.context.startActivity(intent)
+        }
     }
 }

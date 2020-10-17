@@ -43,8 +43,9 @@ class RekomendasiAdapter(private val list: List<Data>, private val context : Con
 
         holder.view.setOnClickListener {
             val intent = Intent(holder.view.context, DetailActivity::class.java)
+            intent.putExtra("data",list[position])
             holder.view.context.startActivity(intent)
-
+            intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         }
 
     }
