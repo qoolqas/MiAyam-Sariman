@@ -19,7 +19,6 @@ class DetailActivity : AppCompatActivity() {
             findViewById<CollapsingToolbarLayout>(R.id.collapsing_toolbar)
         collapsingToolbarLayout.title = ("Mi Ayam")
 
-
         collapsingToolbarLayout.setCollapsedTitleTextColor(
             ContextCompat.getColor(this, R.color.colorAccent)
         )

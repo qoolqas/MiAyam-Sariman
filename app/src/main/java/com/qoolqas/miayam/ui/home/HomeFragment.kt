@@ -41,7 +41,7 @@ class HomeFragment : Fragment() {
             snapHelper.attachToRecyclerView(rvPager)
             rvPager.addItemDecoration(LinePagerIndicatorDecoration())
             rvPager.layoutManager = linearLayoutManager2
-            adapter = DecorationAdapter(mNicolasCageMovies, requireActivity().applicationContext)
+            adapter = PagerAdapter(mNicolasCageMovies, requireActivity().applicationContext)
         }
 
         rvHorizontal.apply {
